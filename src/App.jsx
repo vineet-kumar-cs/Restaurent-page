@@ -9,5 +9,5 @@ import Contact from './pages/Contact'
 import './styles.css'
 
 export default function App() {
-  return <BrowserRouter><Navbar /><main><Routes><Route path="/" element={<Home />} /><Route path="/menu" element={<Menu />} /><Route path="/about" element={<About />} /><Route path="/reservations" element={<Reservations />} /><Route path="/contact" element={<Contact />} /></Routes></main><Footer /></BrowserRouter>
+  return <BrowserRouter basename="/Restaurent-page"><Navbar /><main><Routes><Route path="/" element={<Home />} /><Route path="/menu" element={<Menu />} /><Route path="/about" element={<About />} /><Route path="/reservations" element={<Reservations />} /><Route path="/contact" element={<Contact />} /></Routes></main><Footer /></BrowserRouter>
 }
